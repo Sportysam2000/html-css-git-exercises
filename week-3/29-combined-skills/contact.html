@@ -12,7 +12,7 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <div class="site-header__title">C.Y.F</div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -48,7 +48,7 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
@@ -62,8 +62,31 @@
             <textarea
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              id="comment"
+              required
             ></textarea>
           </div>
+          <fieldset class="checkbox">
+            <legend>"What branch are you interested in?"</legend>
+            <p>
+              <label
+                >London
+                <input type="radio" name="branch" value="London" />
+              </label>
+            </p>
+            <p>
+              <label
+                >Glasgow
+                <input type="radio" name="branch" value="Glasgow" />
+              </label>
+            </p>
+            <p>
+              <label
+                >Manchester
+                <input type="radio" name="branch" value="Manchester" />
+              </label>
+            </p>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </main>
